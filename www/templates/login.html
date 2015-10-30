@@ -1,0 +1,36 @@
+<!--style="background-image: url(./img/1371804202675.jpg);"-->
+<ion-view hide-nav-bar="true" class="viewbackgroundcolor">
+    <ion-content overflow-scroll="true" style="overflow: hidden">
+
+            <div class="container">
+                <h1 class="{{myclass}}">Welcome</h1>
+
+                <div ng-if="!show">
+                    <form class="form"  ng-model="form">
+                        <input class="input" type="text" ng-model="user.number"  placeholder="账号">
+                        <input class="input" type="password" ng-model="user.password"  placeholder="密码">
+                        <button class="button mybutton" ng-click="myalert()" style="border: 0">
+                            <i class={{typeion}} style="float:left;margin-left:35%;font-size: 35px;"></i>
+                            <span style="float:left;margin-left:{{floatm}}">{{type}}</span>
+                        </button>
+                        <button class="loginbutton"  ng-click="login()">登陆</button>
+                        <!--<div style="margin-top: 5px">-->
+                            <!--<button class="button-clear" style="color: white;margin-left: 20px;float: left" ng-click="forget()">忘记密码</button>-->
+                            <!--<button class="button-clear" style="color: white;margin-right: 20px;float: right" ng-click="register()">注册账号</button>-->
+                        <!--</div>-->
+
+                    </form>
+                </div>
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+    </ion-content>
+</ion-view>

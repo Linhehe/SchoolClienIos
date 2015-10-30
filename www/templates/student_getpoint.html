@@ -1,0 +1,93 @@
+<ion-view view-title="签到考勤" hide-back-button="true">
+
+    <ion-nav-buttons side="left" >
+        <i class="ion-chevron-left" style="font-size: 25px; margin-top: 9px;margin-left:12px;" ng-click="return()"></i>
+        <span style="font-size: 18px;margin-top: 12px;margin-left: 10px;" ng-click="return()">返回</span>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <i class="ion-ios-location-outline" style="font-size: 20px;margin-top: 6px; color: white;" ng-click="sign()"></i>
+        <span style="font-size: 16px;margin-top: 6px; color: white;" ng-click="sign()">签到</span>
+    </ion-nav-buttons>
+    <!--<div style="width:100%; height: 100vh;">-->
+        <!--<img src="img/xinkong.jpg" style="width:100%; height:100%; " />-->
+    <!--</div>-->
+    <ion-content scroll="true" overflow-scroll="true" class="has-header">
+        <!--<baidu-map id="allmap" options="mapOptions" class="baidumap" style="width: 100%; height: 700px;display: block;"></baidu-map>-->
+
+        <div id="allmap" style="display: {{map_show}};width: 100%; height: 100%;"></div>
+
+        <!--<img src="./img/pinpoint.png" ng-click="positioning()" style="display: {{show}};position: absolute;bottom: 50px;left: 10px;width: 38px;height: 38px">-->
+        <!--<div class="virtual_body" style="display: {{wifi_show}}">-->
+            <!--<div style="position: fixed;top: -5vh;">-->
+                <!--<div class="radar-arm" >-->
+                    <!--<img src="img/nPFQypy.png" ng-show="radar == 1">-->
+                <!--</div>-->
+                <!--<img class="photo" src="img/TOUX.jpg" style="width:100px;height:100px;border:2px solid #ffffff;border-radius: 50%;z-index: 20;position:relative;top: 220px;left: 38vw">-->
+            <!--</div>-->
+            <!--<div class="fixed_div" align="center" style="display: {{button_show}}">-->
+                <!--<button class="button button-positive ion-wifi" ng-click="open_wifi()" style="width: 46%;" >-->
+                    <!--开启签到热点-->
+                <!--</button>-->
+                <!--<button class="button button-assertive ion-power" ng-click="close_wifi()" style="width: 46%;">-->
+                    <!--关闭签到热点-->
+                <!--</button>-->
+            <!--</div>-->
+            <!--<div ng-if="show" class="wifi_div" style="position:absolute;left:{{math_j}}vh;top:{{math_i}}vh;"><img src="img/back.png" style="width: 100%;height: 100%;border-radius: 50%;border: 2px solid #369FAB"></div>-->
+        <!--</div>-->
+    </ion-content>
+</ion-view>
+
+<!--<style type="text/css">-->
+
+    <!--.virtual_body {-->
+        <!--width:100%;-->
+        <!--height:100%;-->
+        <!--overflow-y:scroll;-->
+        <!--overflow-x:auto;-->
+    <!--}-->
+
+    <!--.fixed_div {-->
+        <!--position:absolute;-->
+        <!--z-index:3;-->
+        <!--width: 100%;-->
+        <!--top: 400px;-->
+        <!--left:0px;-->
+        <!--overflow-x: auto;-->
+    <!--}-->
+    <!--.wifi_div {-->
+        <!--z-index:3;-->
+        <!--overflow-x: auto;-->
+        <!--width: 70px;-->
+        <!--height: 70px;-->
+        <!--transition: 1s linear all;-->
+    <!--}-->
+    <!--.wifi_div.ng-enter{-->
+        <!--width: 50px;-->
+        <!--height: 50px;-->
+        <!--opacity: 0.5;-->
+    <!--}-->
+    <!--.wifi_div.ng-enter.ng-enter-active{-->
+        <!--width: 70px;-->
+        <!--height: 70px;-->
+        <!--opacity: 1;-->
+    <!--}-->
+    <!--.wifi_div.ng-leave{-->
+        <!--width: 70px;-->
+        <!--height: 70px;-->
+        <!--opacity: 1;-->
+    <!--}-->
+    <!--.wifi_div.ng-leave.ng-leave-active{-->
+        <!--width: 50px;-->
+        <!--height: 50px;-->
+        <!--opacity: 0.5;-->
+    <!--}-->
+    <!--.photo{-->
+        <!--border: 0;-->
+        <!--border-radius: 0;-->
+        <!--box-shadow:0px 0px 20px #ffffff;-->
+        <!-&#45;&#45;moz-box-shadow:0px 0px 20px #ffffff;-->
+        <!-&#45;&#45;webkit-box-shadow:0px 0px 20px #ffffff;-->
+    <!--}-->
+
+<!--</style>-->

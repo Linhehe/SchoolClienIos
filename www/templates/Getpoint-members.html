@@ -1,0 +1,24 @@
+<ion-view view-title="班级成员签到">
+    <ion-nav-buttons side="left">
+        <i class="ion-chevron-left" style="font-size: 25px; margin-top: 9px;margin-left:12px;" ng-click="return()"></i>
+        <span style="font-size: 18px;margin-top: 12px;margin-left: 10px;" ng-click="return()">返回</span>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <div class="item" style="text-align: center">
+            <span>现在的签到的课程是：</span>
+            <span style="color: blue">{{SubjectName}}</span>
+        </div>
+        <ul class="list" style="z-index:1;">
+            <li class="item" ng-repeat="menber in menbers" href="#" value="StudentId">
+                {{menber.StudentName}}
+                <button class="situation_button" style="float: right;" ng-show="menber.IsSignIn=='1'">
+                    &nbsp已签到&nbsp
+                </button>
+                <button class="situation_review" style="float: right;" ng-click="Sign(StudentId = menber._id)" ng-show="menber.IsSignIn=='0'">
+                    &nbsp未签到&nbsp
+                </button>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
